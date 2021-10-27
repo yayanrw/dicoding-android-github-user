@@ -1,5 +1,9 @@
 package com.example.githubuser.model
 
+import android.os.Parcelable
+import kotlinx.parcelize.Parcelize
+
+@Parcelize
 data class GithubUserModel (
     val username: String,
     val name: String,
@@ -9,4 +13,4 @@ data class GithubUserModel (
     val repository: Long,
     val follower: Long,
     val following: Long
-)
+) : Parcelable
