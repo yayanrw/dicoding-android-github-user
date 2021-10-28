@@ -10,7 +10,7 @@ data class GithubUserModel (
     val avatar: Int,
     val company: String,
     val location: String,
-    val repository: Long,
-    val follower: Long,
-    val following: Long
+    val repository: String,
+    val followers: String,
+    val following: String
 ) : Parcelable
