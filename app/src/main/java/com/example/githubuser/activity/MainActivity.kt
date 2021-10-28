@@ -3,7 +3,6 @@ package com.example.githubuser.activity
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
 import com.example.githubuser.R
 import com.example.githubuser.adapter.GithubUserAdapter
 import com.example.githubuser.databinding.ActivityMainBinding
