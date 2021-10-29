@@ -17,6 +17,11 @@
     <string name="username">Username</string>
     <string name="company">Company</string>
     <string name="location">Location</string>
+    <string name="username_developer">\@yayanrw</string>
+    <string name="statistik">100</string>
+    <string name="repository">Repository</string>
+    <string name="followers">Followers</string>
+    <string name="following">Following</string>
 
     <!-- Other string resources-->
     <string-array name="username">
