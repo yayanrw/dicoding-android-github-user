@@ -3,156 +3,163 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity.DetailActivity"
-    android:padding="16dp">
+    android:padding="16dp"
+    tools:context=".activity.DetailActivity">
+
     <LinearLayout
         android:id="@+id/lnr_avatar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
         android:layout_marginTop="8dp"
+        android:gravity="center_horizontal"
         android:orientation="horizontal">
+
         <de.hdodenhof.circleimageview.CircleImageView
-            android:id="@+id/img_foto_profil"
+            android:id="@+id/img_avatar"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            tools:src="@tools:sample/avatars"/>
+            tools:src="@tools:sample/avatars" />
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:gravity="center_vertical"
             android:layout_gravity="center_vertical"
-            android:layout_marginStart="8dp">
+            android:layout_marginStart="16dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
             <TextView
                 android:id="@+id/tv_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:text="@string/nama_developer"
                 android:textSize="20sp"
-                android:textStyle="bold"
-                android:text="@string/nama_developer"/>
+                android:textStyle="bold" />
+
             <TextView
                 android:id="@+id/tv_username"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="18sp"
-                android:text="@string/username_developer"/>
+                android:text="@string/username_developer"
+                android:textSize="18sp" />
         </LinearLayout>
     </LinearLayout>
+
     <LinearLayout
-        android:baselineAligned="false"
         android:id="@+id/lnr_statistik"
-        android:layout_below="@id/lnr_avatar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="32dp">
+        android:layout_below="@id/lnr_avatar"
+        android:layout_marginTop="32dp"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:orientation="vertical"
             android:layout_gravity="center_horizontal"
-            android:gravity="center_horizontal">
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
             <TextView
+                android:id="@+id/tv_repository"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:text="@string/statistik"
                 android:textSize="20sp"
-                android:textStyle="bold"
-                android:text="@string/statistik"/>
+                android:textStyle="bold" />
+
             <TextView
-                android:id="@+id/tv_reporsitory"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="18sp"
-                android:text="@string/repository"/>
+                android:text="@string/repository"
+                android:textSize="18sp" />
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:orientation="vertical"
             android:layout_gravity="center_horizontal"
-            android:gravity="center_horizontal">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                android:text="@string/statistik"/>
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
             <TextView
                 android:id="@+id/tv_followers"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="18sp"
-                android:text="@string/followers"/>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:orientation="vertical"
-            android:layout_gravity="center_horizontal"
-            android:gravity="center_horizontal">
+                android:text="@string/statistik"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                android:text="@string/statistik"/>
+                android:text="@string/followers"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
             <TextView
                 android:id="@+id/tv_following"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="18sp"
-                android:text="@string/following"/>
-        </LinearLayout>
-    </LinearLayout>
-    <LinearLayout
-        android:baselineAligned="false"
-        android:id="@+id/lnr_detail_info"
-        android:layout_below="@id/lnr_statistik"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="32dp">
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:orientation="vertical">
+                android:text="@string/statistik"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textSize="14sp"
-                android:text="@string/company"
-                android:gravity="center_horizontal"/>
-            <TextView
-                android:id="@+id/tv_company"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="18sp"
-                android:textStyle="bold"
-                android:text="@string/company"/>
+                android:text="@string/following"
+                android:textSize="18sp" />
         </LinearLayout>
+    </LinearLayout>
+
     <LinearLayout
-        android:layout_width="0dp"
+        android:id="@+id/lnr_detail_info"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
+        android:layout_below="@id/lnr_statistik"
+        android:layout_marginTop="32dp"
+        android:baselineAligned="false"
         android:orientation="vertical">
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="14sp"
+            android:text="@string/company"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_company"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/company"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
             android:text="@string/location"
-            android:gravity="center_horizontal"/>
+            android:textSize="14sp" />
+
         <TextView
             android:id="@+id/tv_location"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:text="@string/location"
             android:textSize="18sp"
-            android:textStyle="bold"
-            android:text="@string/location"/>
-    </LinearLayout>
+            android:textStyle="bold" />
     </LinearLayout>
 </RelativeLayout>
