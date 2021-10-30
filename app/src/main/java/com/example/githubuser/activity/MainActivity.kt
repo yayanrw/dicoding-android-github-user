@@ -1,7 +1,7 @@
 package com.example.githubuser.activity
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.githubuser.R
 import com.example.githubuser.adapter.GithubUserAdapter
@@ -37,10 +37,19 @@ class MainActivity : AppCompatActivity() {
             val listGithubUser = ArrayList<GithubUserModel>()
             for (i in dataUsername.indices) {
                 val githubUser = GithubUserModel(
-                    dataUsername[i], dataName[i], dataAvatar.getResourceId(i, -1), dataCompany[i], dataLocation[i], dataRepository[i],  dataFollowers[i], dataFollowing[i])
+                    dataUsername[i],
+                    dataName[i],
+                    dataAvatar.getResourceId(i, -1),
+                    dataCompany[i],
+                    dataLocation[i],
+                    dataRepository[i],
+                    dataFollowers[i],
+                    dataFollowing[i]
+                )
                 listGithubUser.add(githubUser)
             }
-            return  listGithubUser
+            dataAvatar.recycle()
+            return listGithubUser
         }
 
     private fun showRecyclerList() {
