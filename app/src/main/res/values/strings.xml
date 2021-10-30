@@ -24,6 +24,7 @@
     <string name="following">Following</string>
     <string name="avatar">Avatar</string>
     <string name="_0">0</string>
+    <string name="get_username">\@%1$s</string>
 
     <!-- Other string resources-->
     <string-array name="username">
